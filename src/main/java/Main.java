@@ -65,4 +65,6 @@ public class Main {
     Que se passe t'il si on inverse les références au niveau des « constructor-arg » ?
 
     Le fichier indique une erreur car le référencement correspond pas aux arguments du constructeur.
+
+    Néanmoins si on retire les index, et qu'on inverse les références ça va marcher.
 */
