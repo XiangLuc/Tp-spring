@@ -15,9 +15,14 @@
         <property name="nbJours" value="10"> </property>
     </bean>
 
-    <bean id="demandeConge" class="tp1.DemandeConge">
+    <bean id="demandeConge" class="tp1.DemandeConge" scope="prototype">
         <property name="collaborateur" ref="c"> </property>
         <property name="periode" ref="p"> </property>
+    </bean>
+
+    <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs">
+        <constructor-arg index="0" ref="c"/>
+        <constructor-arg index="1" ref="p"/>
     </bean>
 
 </beans>
