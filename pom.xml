@@ -8,7 +8,7 @@
   <name>Tp-Spring Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <spring.version>6.1.14</spring.version>
+    <spring.version>4.1.7.RELEASE</spring.version>
   </properties>
   <dependencies>
     <dependency>
