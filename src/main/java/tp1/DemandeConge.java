@@ -7,11 +7,6 @@ public class DemandeConge {
     private Collaborateur collaborateur;
     private Periode periode;
 
-    public DemandeConge(Collaborateur collaborateur, Periode periode) {
-        this.collaborateur = collaborateur;
-        this.periode = periode;
-    }
-
     public Collaborateur getCollaborateur() {
         return collaborateur;
     }

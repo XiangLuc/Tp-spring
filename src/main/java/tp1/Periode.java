@@ -7,11 +7,6 @@ public class Periode {
     private String dateDebut;
     private int nbJours;
 
-    public Periode(String dateDebut, int nbJours) {
-        this.dateDebut = dateDebut;
-        this.nbJours = nbJours;
-    }
-
     public String getDateDebut() {
         return dateDebut;
     }
