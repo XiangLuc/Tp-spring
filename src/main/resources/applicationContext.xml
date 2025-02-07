@@ -5,6 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:annotation-config />
+    <context:component-scan base-package="com.ecoalis" />
 
     <!--  TP1  -->
 
@@ -18,8 +20,6 @@
         <property name="nbJours" value="10"> </property>
     </bean>
 
-
-
     <!--  TP2  -->
 
     <!--
@@ -31,8 +31,6 @@
 
     <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs" autowire="constructor"> </bean>
     -->
-
-    <context:annotation-config />
 
     <!--
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
