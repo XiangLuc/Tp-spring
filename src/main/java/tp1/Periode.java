@@ -1,6 +1,7 @@
 package tp1;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 public class Periode {
 
@@ -25,7 +26,7 @@ public class Periode {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("Date début", dateDebut)
                 .append("Nombre jour(s)", nbJours)
                 .toString();
