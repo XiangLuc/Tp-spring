@@ -24,6 +24,6 @@
 
     <bean id="demandeConge" class="tp1.DemandeConge" autowire="byType"> </bean>
 
-    <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs" autowire="byName"> </bean>
+    <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs" autowire="constructor"> </bean>
 
 </beans>

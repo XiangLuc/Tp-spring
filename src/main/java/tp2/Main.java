@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import tp1.Collaborateur;
 import tp1.DemandeConge;
+import tp1.DemandeCongeSansModificateurs;
 import tp1.Periode;
 
 public class Main {
@@ -14,10 +15,12 @@ public class Main {
         Collaborateur collaborateur = (Collaborateur) applicationContext.getBean("c");
         Periode periode = (Periode) applicationContext.getBean("p");
         DemandeConge demandeConge = (DemandeConge) applicationContext.getBean("demandeConge");
+        DemandeCongeSansModificateurs demandeCongeSansModificateurs = (DemandeCongeSansModificateurs) applicationContext.getBean("demandeCongeSansModificateurs");
 
         System.out.println(collaborateur);
         System.out.println(periode);
         System.out.println(demandeConge);
+        System.out.println(demandeCongeSansModificateurs);
 
     }
 }
