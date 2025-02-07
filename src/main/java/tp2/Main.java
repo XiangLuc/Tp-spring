@@ -31,9 +31,11 @@ public class Main {
     Que se passe t'il lorsque l'injection des collaborateurs dans « DemandeConge »
     est faite « byName » ?
 
+    Les valeurs sont null lors du test.
+
     Que faudrait-il changer pour pouvoir utiliser ce type d'injection?
 
-    Pour utiliser ce type d'injection il faut que les variables de la classe DemandeongeSansModificateurs.java aient les meme noms
+    Pour utiliser ce type d'injection il faut que les variables de la classe DemandeConge.java ait les meme noms
     que les id des beans de Periode et Collaborateur soit p et c.
 
 
