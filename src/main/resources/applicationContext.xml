@@ -36,6 +36,14 @@
 
     <bean id="demandeConge" class="tp1.DemandeConge"> </bean>
 
-    <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs"> </bean>
+    <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs">
+        <constructor-arg ref="c" />
+        <constructor-arg ref="p" />
+    </bean>
+
+    <bean id="c2" class="tp1.Collaborateur">
+        <property name="nom" value="Xiang"> </property>
+        <property name="prenom" value="Luc"> </property>
+    </bean>
 
 </beans>
