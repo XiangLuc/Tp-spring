@@ -4,30 +4,30 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class DemandeConge {
 
-    private Collaborateur collaborateur;
-    private Periode periode;
+    private Collaborateur c;
+    private Periode p;
 
-    public Collaborateur getCollaborateur() {
-        return collaborateur;
+    public Collaborateur getC() {
+        return c;
     }
 
-    public void setCollaborateur(Collaborateur collaborateur) {
-        this.collaborateur = collaborateur;
+    public void setC(Collaborateur c) {
+        this.c = c;
     }
 
-    public Periode getPeriode() {
-        return periode;
+    public Periode getP() {
+        return p;
     }
 
-    public void setPeriode(Periode periode) {
-        this.periode = periode;
+    public void setP(Periode p) {
+        this.p = p;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .append("Collaborateur", collaborateur)
-                .append("Période", periode)
+                .append("Collaborateur", c)
+                .append("Période", p)
                 .toString();
     }
 }

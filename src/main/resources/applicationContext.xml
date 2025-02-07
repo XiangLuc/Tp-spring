@@ -22,7 +22,11 @@
 
     <!--  TP2  -->
 
+    <!--
     <bean id="demandeConge" class="tp1.DemandeConge" autowire="byType"> </bean>
+    -->
+
+    <bean id="demandeConge" class="tp1.DemandeConge" autowire="byName"> </bean>
 
     <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs" autowire="constructor"> </bean>
 
