@@ -26,8 +26,16 @@
     <bean id="demandeConge" class="tp1.DemandeConge" autowire="byType"> </bean>
     -->
 
+    <!--
     <bean id="demandeConge" class="tp1.DemandeConge" autowire="byName"> </bean>
 
     <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs" autowire="constructor"> </bean>
+    -->
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <bean id="demandeConge" class="tp1.DemandeConge"> </bean>
+
+    <bean id="demandeCongeSansModificateurs" class="tp1.DemandeCongeSansModificateurs"> </bean>
 
 </beans>

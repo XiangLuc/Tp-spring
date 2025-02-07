@@ -1,10 +1,14 @@
 package tp1;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class DemandeConge {
 
+    @Autowired
     private Collaborateur c;
+
+    @Autowired
     private Periode p;
 
     public Collaborateur getC() {
