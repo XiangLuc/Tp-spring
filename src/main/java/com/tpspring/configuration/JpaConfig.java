@@ -1,4 +1,4 @@
-package com.tpspring.config;
+package com.tpspring.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
