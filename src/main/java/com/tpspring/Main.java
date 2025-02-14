@@ -1,6 +1,6 @@
 package com.tpspring;
 
-import com.tpspring.config.JpaConfig;
+import com.tpspring.configuration.JpaConfig;
 import com.tpspring.services.AnnonceService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
