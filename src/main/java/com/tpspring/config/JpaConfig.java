@@ -20,7 +20,6 @@ import java.util.Properties;
 @ComponentScan(basePackages = "com.tpspring")
 public class JpaConfig {
 
-    @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
