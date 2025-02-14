@@ -10,8 +10,13 @@ import java.util.List;
 @Service
 public class AnnonceService {
 
+    private final AnnonceRepository annonceRepository;
+
     @Autowired
-    private AnnonceRepository annonceRepository;
+    public AnnonceService(AnnonceRepository annonceRepository) {
+        this.annonceRepository = annonceRepository;
+    }
+
     public List<Annonce> getAllAnnonces() {
         return this.annonceRepository.findAll();
     }
